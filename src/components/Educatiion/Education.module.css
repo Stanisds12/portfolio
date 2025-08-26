@@ -1,0 +1,264 @@
+/* Education.module.css */
+
+.education {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .titleUnderline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #9333ea, #ec4899);
+    margin: 0 auto 4rem auto;
+    border-radius: 2px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #9333ea, #ec4899);
+  }
+  
+  .timelineItem {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 80px;
+  }
+  
+  .timelineMarker {
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border: 3px solid #9333ea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(147, 51, 234, 0.2);
+    z-index: 2;
+  }
+  
+  .educationCard {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .educationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .educationCard::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #ffffff;
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .degree {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .duration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9333ea;
+    font-weight: 600;
+    background: #f3e8ff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .institutionInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .institution {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin: 0;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  .gpa {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #059669;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    background: #ecfdf5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  
+  .description {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .achievements {
+    margin-top: 1.5rem;
+  }
+  
+  .achievementsTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+  }
+  
+  .achievementsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .achievement {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+  
+  .achievement::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education {
+      padding: 3rem 1rem;
+    }
+  
+    .sectionTitle {
+      font-size: 2.5rem;
+    }
+  
+    .timeline::before {
+      left: 20px;
+    }
+  
+    .timelineItem {
+      padding-left: 60px;
+    }
+  
+    .timelineMarker {
+      left: 8px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .educationCard::before {
+      left: -12px;
+      border-right-width: 12px;
+    }
+  
+    .cardHeader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .degree {
+      font-size: 1.3rem;
+      min-width: auto;
+    }
+  
+    .institutionInfo {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sectionTitle {
+      font-size: 2rem;
+    }
+  
+    .educationCard {
+      padding: 1.5rem;
+    }
+  
+    .degree {
+      font-size: 1.2rem;
+    }
+  
+    .institution {
+      font-size: 1.1rem;
+    }
+  }

@@ -1,0 +1,108 @@
+.projectCard {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .projectCard:hover .projectImage {
+    transform: scale(1.1);
+  }
+  
+  .projectLinks {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .projectCard:hover .projectLinks {
+    opacity: 1;
+  }
+  
+  .projectLink {
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    color: #374151;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .projectLink:hover {
+    background-color: white;
+  }
+  
+  .projectContent {
+    padding: 1.5rem;
+  }
+  
+  .projectHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .projectTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .featuredBadge {
+    padding: 0.125rem 0.5rem;
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 9999px;
+  }
+  
+  .projectDescription {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .techTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .techTag {
+    padding: 0.25rem 0.75rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .techTag:hover {
+    background-color: #e5e7eb;
+  }

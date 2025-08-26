@@ -1,0 +1,39 @@
+.skillItem {
+    margin-bottom: 1rem;
+  }
+  
+  .skillHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skillName {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .skillPercentage {
+    color: #9333ea;
+    font-weight: bold;
+  }
+  .skillLogo{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  .skillBarBg {
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.5rem;
+  }
+  
+  .skillBar {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    height: 0.5rem;
+    border-radius: 9999px;
+    transition: width 1s ease-out;
+  }
